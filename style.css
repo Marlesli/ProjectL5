@@ -14,8 +14,11 @@ body > * {
   padding: 10px;
 }
 
-section { grid-area: one;}
-header { grid-area: two}
+section { grid-area: one;
+        background-color: black;}
+header { grid-area: two;
+        background-color: black;
+       }
 nav {grid-area: three;}
 main {grid-area: four;}
 footer{grid-area: five;}
@@ -23,12 +26,12 @@ footer{grid-area: five;}
 .Head1{
   font-family: Arial Narrow, sans-serif;
   font-size: 30px;
-  color: darkblue;
+  color: white;
 }
 
 .Head2{
   font-family: Arial Narrow, sans-serif;
-  color: darkblue;
+  color: white;
 }
 .taglist{
   font-family: Didot, serif;
@@ -42,4 +45,33 @@ footer{grid-area: five;}
   color: purple;
   
 }
+.page1list{
+  color:rgb(165, 42, 42);
+}
+.footercolor{
+  color:rgb(128, 0, 128);
+}
+.maincolor{
+  color:rgb(176, 93, 8)
+}
 
+.homefooter{
+  color:rgb(128, 0, 128);
+}
+
+.grid-container1{
+  background-color:rgb(187, 204, 218) ;
+}
+
+.grid-container2{
+  background-color: rgb(245, 204, 218);
+}
+.grid-con{
+  background-color:rgb(245, 233, 148) ;
+}
+.grid-con2{
+  background-color: rgb(153, 233, 148);
+}
+.grid-con3{
+  background-color: rgb(105, 170, 249);
+}
