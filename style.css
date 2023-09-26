@@ -23,7 +23,7 @@ nav {grid-area: three;}
 main {grid-area: four;}
 footer{grid-area: five;}
 
-.Head1{
+.Head1{/* ref page 2*/
   font-family: Arial Narrow, sans-serif;
   font-size: 30px;
   color: white;
@@ -45,20 +45,20 @@ footer{grid-area: five;}
   color: purple;
   
 }
-.page1list{
+.page1list{/*ref page1*/
   color:rgb(165, 42, 42);
 }
-.footercolor{
+.footercolor{/*ref page1*/
   color:rgb(128, 0, 128);
 }
-.maincolor{
+.maincolor{/*ref home page*/
   color:rgb(176, 93, 8)
 }
 
-.homefooter{
+.homefooter{/* ref home page*/
   color:rgb(128, 0, 128);
 }
-
+/*page 1 containers*/
 .grid-container1{
   background-color:rgb(187, 204, 218) ;
 }
