@@ -30,30 +30,54 @@
         main{
       font-family:Didot, serif;
     }
+    header{
+      font-size: 40px;
+    }
 </style>
 </head>
 
 <body>
+ <section>
 <header>
-  <img src="./images/Gamer_Header.jpg" alt="Monitor and game console">
+  <h1 class="Head1">First Page</h1>
+   <img src="./images/Gamer_Header.jpg" alt="Monitor and game console">
 </header>
+</header>
+  </section>
+  <header>
+    <h1 class="Head2"> Concepts We've Learned</h1>
+  </header>
  <main>
-    <h1>Header 1</h1>
-  <p>This is where my information for my paragraph will go </p>
-     <ol start type="I">
-       <li>First Concept</li>
-       <li>Second Concept</li>
-       <li>Third Concept</li></ol>
-   
+<ol type="I">
+  <li>DOM (Document Object Model)</li>
+   <ol type="i">
+      <li>Parents whose links show directly back to children</li>
+      <li>Your're able to manipulate the structure and its content</li>
+    </ol>
+  </li>
+  
+  <li>Semantic vs. Non-Sematic</li>
+  <ol type="i">
+      <li>Semantic elements are more clarified to the browser and non-semantic doesn't give clear information about the content</li>
+      <li>Ex.&lt;div&gt; is non-semantic and &lt;p&gt; is semantic</li>
+  </ol>
+</li>
+    
+ <li>Block Elements vs. Inline</li>
     <ol type="i">
-     <li style="margin-left:2em">Key point of first concept</li>
-      <li style="margin-left:2em" >Key point of second concept</li>
-      <li style="margin-left:2em" >Key point of third concept</li></ol>
+      <li>Each block elements start on their own line and automatically there is margin around the element </li>
+      <li>Inline elements do not start on a new line and take up only the space it needs to.</li>
+</ol>
+
    
  </main>
     <!-- this is where I can add an image if needed in the main semantic-->
-  <nav>...<!-- insert my navigation links here-->
-   <ul>..<!-- used for ONORDERED links, typically rendered as a bulleted list. You'll put your link list in here-->
+  <nav><!-- insert my navigation links here-->
+   <ul>
+     <style>
+       a:hover {
+  color: orangered;
+     </style><!-- used for ONORDERED links, typically rendered as a bulleted list. You'll put your link list in here-->
   <li class="nav-item">
         <a class="nav-link" href="index.html">Home</a>
       </li>
