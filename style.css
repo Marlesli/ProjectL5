@@ -1,0 +1,42 @@
+body{
+  display: grid;
+  grid-template-areas:
+    "one two"
+    "three four";
+  padding: 10px;
+  gap: 10px;
+}
+
+body > * {
+  background-color: lightblue;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+section { grid-area: one;}
+header { grid-area: two}
+nav {grid-area: three;}
+main {grid-area: four;}
+
+.Head1{
+  font-family: Arial Narrow, sans-serif;
+  font-size: 30px;
+  color: darkblue;
+}
+
+.Head2{
+  font-family: Arial Narrow, sans-serif;
+  color: darkblue;
+}
+.taglist{
+  font-family: Didot, serif;
+  font-size:large;
+  color: purple;
+}
+
+.attlist{
+  font-family: Didot, serif;
+  font-size:large;
+  color: purple;
+  
+}
