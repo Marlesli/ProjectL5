@@ -27,31 +27,25 @@
 
     <main>
        <form id = "Form"action="https://webdevbasics.net/scripts/yoga.php
-" method="POST">
+" onsubmit="return validateForm()"  method="POST">
     <!-- Main content-->
     <h2>Registration Form</h2>
  <label for="fname">First Name:</label>
-  <input type="text" id="fname" name="fname" maxlength="50" size="15">
+  <input type="text" id="fname" name="fname" minlength="1" maxlength="50" size="15">
   <br><br>
     <label for="lname">Last Name:</label>
-  <input type="text" id="lname" name="lname" maxlength="50" size="15">
+  <input type="text" id="lname" name="lname" minlength="1" maxlength="50" size="15">
    <br><br>
    E-mail: <input type="email" id="myEmail" placeholder="johnsmith@gmail.com">
          <br><br>
          <!-- Phone Number-->
      <label for="number">Phone Number:</label>
 
- <input type="tel" id="phonenumber"pattern="[123-456-7890]{10}"
-   placeholder="123-456-7890">
+ <input type="tel" id="phonenumber"pattern= "\d{3}-?\s?\d{3}-?\s?\d{4}" 
+   placeholder="###-###-####">
          <br><br>
 <!--State dropdown menu-->
     <div class="state"
-   <p> State:
-   <select name="state">
-     <option name ="State" value="OR">OR</option>
-     <option name ="State" value="WA">WA</option>
-     <option name ="State" value="CA">CA</option>
-   </select></p></div>
         <!--Birthdate input-->
          <label for="birthyear">Birth Year:</label>
 
@@ -60,10 +54,10 @@
          <br><br>
          <!-- Create Username-->
             <label for="uname">Username</label>
-    <input type="text" placeholder="Enter Username" name="Uname" required>
+    <input type="text" placeholder="Enter Username" name="Uname" minlength="5" maxlength="10" required>
 <!-- Create Password-->
     <label for="psw">Password</label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input type="password" placeholder="Enter Password" name="psw" minlength="8" required>
 
          <!-- Confirm Password-->
          <label for="psw2"> Confirm Password </label>
