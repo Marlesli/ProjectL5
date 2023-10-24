@@ -24,9 +24,20 @@ function checkPassword(Form) {
 } 
 
 
-// Array of existing valid usernames
 const existingUsernames = ["Admin", "Harry", "Elizabeth", "Shana"];
 
 function isUsernameAvailable(username) {
   return !existingUsernames.includes(username);
 }
+
+function checkUsernameAvailability() {
+  const usernameToCheck = document.getElementById('username').value;
+  const message = document.getElementById('availabilityMessage');
+
+  if (isUsernameAvailable(usernameToCheck)) {
+    message.textContent = `Username "${usernameToCheck}" is available.`;
+  } else {
+    message.textContent = `Username "${usernameToCheck}" is already taken.`;
+  }
+}
+

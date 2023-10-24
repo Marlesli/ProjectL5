@@ -56,7 +56,7 @@
          <!-- Create Username-->
             <label for="uname">Username</label>
     <input type="text" id="username" placeholder="Enter Username" name="Username" minlength="5" maxlength="10" required>
-
+<p id="availabilityMessage"> </p>
          
 <!-- Create Password-->
     <label for="password">Password</label>
@@ -69,7 +69,7 @@
       
          <br><br>  
 
-<button type="submit" onclick="checkPassword(Form)" value="submit">Submit</button>
+<button type="submit" onclick="checkPassword(Form);checkUsernameAvailability() " value="submit">Submit</button>
          
          <button type="reset">Reset</button>
   </main>
