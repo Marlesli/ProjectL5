@@ -36,8 +36,13 @@ function checkUsernameAvailability() {
 
   if (isUsernameAvailable(usernameToCheck)) {
     message.textContent = `Username "${usernameToCheck}" is available.`;
+    
+    return true;
+    
   } else {
     message.textContent = `Username "${usernameToCheck}" is already taken.`;
+
+    return false;
   }
 }
 

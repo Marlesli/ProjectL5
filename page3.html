@@ -28,7 +28,7 @@
     <main>
 
        <form id = "Form"action="https://webdevbasics.net/scripts/yoga.php
-"  method="POST">
+" onsubmit="checkUsernameAvailability()" method="POST">
     <!-- Main content-->
     <h2>Registration Form</h2>
  <label for="fname">First Name:</label>
@@ -69,7 +69,7 @@
       
          <br><br>  
 
-<button type="submit" onclick="checkPassword(Form);checkUsernameAvailability() " value="submit">Submit</button>
+<button type="button" onclick= "checkPassword(Form);return checkUsernameAvailability() " value="submit">Submit</button>
          
          <button type="reset">Reset</button>
   </main>
