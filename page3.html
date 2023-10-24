@@ -26,6 +26,7 @@
 </div>
 
     <main>
+
        <form id = "Form"action="https://webdevbasics.net/scripts/yoga.php
 "  method="POST">
     <!-- Main content-->
@@ -59,15 +60,16 @@
          
 <!-- Create Password-->
     <label for="password">Password</label>
-    <input type="password" id="password" placeholder="Enter Password" name="password" minlength="8" required>
+    <input type="password" id="password1" placeholder="Enter Password" name="password1" minlength="8" required>
 
          <!-- Confirm Password-->
          <label for="password2"> Confirm Password </label>
-<input type = "password" id="confirmPassword" placeholder="Confirm Password"
+<input type = "password" id="password2" placeholder="Confirm Password"
   name="password2" required> 
+      
          <br><br>  
-         <input type ="button" onclick="checkPassword()" value="Submit"/>
-<button type="submit"  value="submit">Submit</button>
+
+<button type="submit" onclick="checkPassword(Form)" value="submit">Submit</button>
          
          <button type="reset">Reset</button>
   </main>
